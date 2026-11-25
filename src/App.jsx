@@ -1,5 +1,14 @@
+import { Route, Routes } from 'react-router-dom'
+import Login from './components/Login.jsx'
+import Success from './components/Success.jsx'
+
 function App() {
-  return <h1>Login Formu E2E Testi</h1>
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/success" element={<Success />} />
+    </Routes>
+  )
 }
 
 export default App
